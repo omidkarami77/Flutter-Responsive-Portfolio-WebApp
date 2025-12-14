@@ -1,57 +1,65 @@
 class Project {
   final String name;
   final String description;
-  final String image;
+
   final String link;
-  Project(this.name, this.description, this.image, this.link);
+  Project(this.name, this.description, this.link);
 }
 
 List<Project> projectList = [
   Project(
-    'Coffee Application',
-    'Presenting "Coffee" - a Flutter UI application that invites you to indulge in a delightful coffee adventure. Immerse yourself in the world of rich aroma and flavor as you browse through an exquisite selection of specialty coffees. With a user-friendly interface, exploring different blends and discovering their unique details becomes a delightful experience.',
-    'assets/images/coffee.png',
-    'https://github.com/Hamad-Anwar/Coffe-Shop-Beautifull-UI',
+    'Shop Application',
+    'A modern and elegant Flutter e-commerce application that provides a seamless shopping experience. Browse through a wide range of products with beautiful UI/UX design, add items to your cart, and enjoy smooth animations. Built with Flutter for cross-platform compatibility and features product categories, search functionality, and an intuitive checkout process.',
+    'https://github.com/omidkarami77/shop',
   ),
   Project(
-    'Car Controller Application UI',
-    'Car Control Dashboard is a user-friendly mobile application built using Flutter and powered by GetX for efficient state management. Enjoy a modern and intuitive design that adapts to various screen sizes, Interact with dynamic car controls, including speed, steering, and temperature. Realistic animations enhance the visual appeal, making it feel like you are controlling a real car!',
-    'assets/images/car.png',
-    'https://github.com/Hamad-Anwar/Car-Controller-Getx-Flutter',
+    'Exchange Application',
+    'A comprehensive cryptocurrency exchange Flutter application featuring real-time price tracking, currency conversion, and market analysis. Built with Flutter and Bloc state management, this app provides users with live crypto rates, interactive charts, and seamless trading functionality. Supports multiple currencies with a clean, responsive interface optimized for all screen sizes.',
+    'https://github.com/omidkarami77/exchange',
   ),
   Project(
-      'Neumorphic Clockify',
-      'Neumorphic TimeKit is an open-source project that brings together the elegance of a beautifully designed alarm system, an analog clock with a neumorphic touch, and a feature-rich stopwatch. Whether you\'re looking for a functional alarm tool, a stylish desktop clock, or a precise stopwatch, TimeKit has you covered.',
-      'assets/images/alarm.jpg',
-      'https://github.com/Hamad-Anwar/Neumorphic-Analog-Clockify'),
+    'Instagram UI Clone',
+    'A pixel-perfect Flutter recreation of Instagram\'s user interface. This project showcases advanced UI/UX implementation with features like stories, feed posts, reels, and profile pages. Built with Flutter to demonstrate expertise in replicating complex social media designs, smooth animations, and interactive components that mirror the original Instagram experience.',
+    'https://github.com/omidkarami77/instagram',
+  ),
   Project(
-      'CUI Aider',
-      'CUI AIDER is an extraordinary application that brings together augmented reality (AR), a robust student portal, intuitive class management, and a comprehensive GPA system, providing an all-encompassing solution for students.Using AR technology, CUI AIDER offers an immersive experience, allowing users to explore the complete university campus virtually. Through AR, students can visualize buildings, navigate with interactive directions, and gain a better understanding of their surroundings.',
-      'assets/images/cui.png',
-      'https://github.com/Hamad-Anwar/'),
+    'Weather Application',
+    'A beautiful and intuitive Flutter weather app that provides real-time weather forecasts and conditions. Features include current weather display, 7-day forecasts, hourly predictions, temperature trends, and location-based weather updates. Built with modern UI design, smooth animations, and API integration to deliver accurate meteorological data for any location worldwide.',
+    'https://github.com/omidkarami77/weather_app',
+  ),
   Project(
-      'Flutter Music Streaming Application',
-      'A Flutter music streaming application that allows users to play audio files from local storage. The app features a beautiful neumorphic UI design and provides a smooth user experience for browsing and playing music.',
-      'assets/images/player.png',
-      'https://github.com/Hamad-Anwar/Neumorphic-Music_Player-Flutter'),
+    'Note Application',
+    'A feature-rich Flutter note-taking application designed for productivity and organization. Create, edit, and manage notes with rich text formatting, categorization, and search functionality. Features include cloud sync, offline access, customizable themes, and an intuitive interface that makes capturing ideas and organizing thoughts effortless.',
+    'https://github.com/omidkarami77/note',
+  ),
   Project(
-      'Food Recipe App',
-      'This repository contains a Flutter implementation of a Food Recipe app with a captivating introduction section and impressive animations. It also features a signup and signin page with animations, elegantly presented on a bottom sheet.',
-      'assets/images/recipe.png',
-      'https://github.com/Hamad-Anwar/Food-Recipe-App-Flutter'),
+    'Quiz Application',
+    'An interactive and engaging Flutter quiz application that tests knowledge across various categories. Features include multiple-choice questions, timer-based challenges, score tracking, and instant feedback. Built with smooth animations, progress indicators, and a user-friendly interface that makes learning fun and competitive.',
+    'https://github.com/omidkarami77/quiz_app',
+  ),
   Project(
-      'Task Sync Pro',
-      'Welcome to the Beautiful Task Scheduler App repository! This Flutter-based task management application combines elegant design with a robust backend, ensuring a seamless and organized task management experience. From stunning UI to real-time synchronization, this app has you covered.',
-      'assets/images/task.png',
-      'https://github.com/Hamad-Anwar/Task-Sync-Pro-Flutter'),
+    'BMI Application',
+    'A health-focused Flutter application for calculating Body Mass Index (BMI) with personalized health insights. Users can input their height and weight to instantly calculate their BMI, receive health status feedback, and track their fitness journey. Features include metric/imperial unit conversion, visual indicators, and health recommendations based on BMI categories.',
+    'https://github.com/omidkarami77/bmi_calculator',
+  ),
   Project(
-      'Flutter Chat Application with Firebase',
-      'Welcome to our innovative Flutter chat application! This feature-rich messaging platform allows users to connect and communicate seamlessly through text and images. The app is built using Flutter for the frontend and integrates with Firebase for backend services, including authentication, real-time database, and storage.',
-      'assets/images/chat.png',
-      'https://github.com/Hamad-Anwar/Messenger-App-Backend-Firebase'),
+    'Calculator Application',
+    'A sleek and functional Flutter calculator application with a modern UI design. Performs basic arithmetic operations including addition, subtraction, multiplication, and division. Features a clean interface, smooth animations, responsive button feedback, and support for decimal calculations. Built to showcase fundamental Flutter UI skills and mathematical logic implementation.',
+    'https://github.com/omidkarami77/calculator',
+  ),
   Project(
-      'Doctor Appointment Application',
-      'Introducing the extraordinary "Doctor Appointment System" - a state-of-the-art Flutter UI application that redefines healthcare accessibility and efficiency. Seamlessly crafted, this app empowers users to effortlessly select doctors based on categories, engage in smooth messaging, and access detailed profiles.',
-      'assets/images/doctor.png',
-      'https://github.com/Hamad-Anwar/Doctor-Appointment-Application-UI'),
+    'Tic Tac Toe Application',
+    'A classic two-player Tic Tac Toe game built with Flutter. Features include player vs player mode, win detection, draw detection, score tracking, and smooth animations. The game offers an intuitive interface with visual feedback for moves and game outcomes. Perfect for demonstrating game logic implementation and interactive UI design in Flutter.',
+    'https://github.com/omidkarami77/tic_tac_toe',
+  ),
+  Project(
+    'Weather Forecast App',
+    'An advanced Flutter weather application with comprehensive forecasting capabilities. Provides detailed weather information including temperature, humidity, wind speed, and extended forecasts. Features location-based weather updates, multiple city support, beautiful weather animations, and real-time data from reliable weather APIs.',
+    'https://github.com/omidkarami77/weather_',
+  ),
+  Project(
+    'Rock Paper Scissors Game',
+    'An entertaining Flutter implementation of the classic Rock Paper Scissors game. Play against the computer with random AI moves, track your wins and losses, and enjoy smooth animations for game actions. Features include score persistence, engaging UI with interactive gestures, and instant result feedback with visual effects.',
+    'https://github.com/omidkarami77/rock_paper_scisser',
+  ),
 ];

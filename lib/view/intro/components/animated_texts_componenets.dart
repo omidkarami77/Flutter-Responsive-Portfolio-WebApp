@@ -4,13 +4,17 @@ import '../../../res/constants.dart';
 import '../../../view model/responsive.dart';
 
 class AnimatedImageContainer extends StatefulWidget {
-  const AnimatedImageContainer({Key? key, this.height = 300, this.width = 250})
-      : super(key: key);
+  const AnimatedImageContainer({
+    super.key,
+    this.height = 300,
+    this.width = 250,
+  });
   final double? width;
   final double? height;
   @override
   AnimatedImageContainerState createState() => AnimatedImageContainerState();
 }
+
 class AnimatedImageContainerState extends State<AnimatedImageContainer>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
@@ -22,11 +26,13 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
       duration: const Duration(milliseconds: 1000),
     )..repeat(reverse: true); // Repeat the animation loop
   }
+
   @override
   void dispose() {
     _controller.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
@@ -41,10 +47,9 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
             padding: const EdgeInsets.all(defaultPadding / 4),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
-              gradient: const LinearGradient(colors: [
-                Colors.pinkAccent,
-                Colors.blue,
-              ]),
+              gradient: const LinearGradient(
+                colors: [Colors.pinkAccent, Colors.blue],
+              ),
               boxShadow: const [
                 BoxShadow(
                   color: Colors.pink,
@@ -69,14 +74,21 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
                 height: Responsive.isLargeMobile(context)
                     ? MediaQuery.sizeOf(context).width * 0.2
                     : Responsive.isTablet(context)
-                        ? MediaQuery.sizeOf(context).width * 0.14
-                        : 200,
+                    ? MediaQuery.sizeOf(context).width * 0.14
+                    : 200,
                 width: Responsive.isLargeMobile(context)
                     ? MediaQuery.sizeOf(context).width * 0.2
                     : Responsive.isTablet(context)
-                        ? MediaQuery.sizeOf(context).width * 0.14
-                        : 200,
+                    ? MediaQuery.sizeOf(context).width * 0.14
+                    : 200,
                 fit: BoxFit.cover,
+                errorBuilder: (context, error, stackTrace) {
+                  return const Icon(
+                    Icons.person,
+                    size: 100,
+                    color: Colors.white,
+                  );
+                },
               ),
             ),
           ),
